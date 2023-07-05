@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css boxes</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    section {
+      margin-top: 50px;
+    }
+
+    .container {
+      width: 1260px;
+      height: 100px;
+      background-color: aqua;
+      margin-bottom: 50px;
+    }
+
+    .box {
+      width: 417px;
+      height: 70px;
+      background-color: aliceblue;
+      display: inline-block;
+    }
+
+    .float-box {
+      width: 417px;
+      height: 70px;
+      background-color: aliceblue;
+      float: left;
+      /* margin: 1px; */
+    }
+
+    .grid-box-container {
+      width: 1260px;
+      height: 100px;
+      background-color: aqua;
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 420px 420px 420px;
+
+    }
+
+    .flex-box-container {
+      width: 1260px;
+      height: 100px;
+      background-color: aqua;
+      margin-bottom: 50px;
+      display: flex;
+      /* margin: 1px; */
+
+    }
+
+    .flex-box {
+      background-color: aliceblue;
+      flex: 33%;
+      margin: 3px;
+      height: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"> This is container of <strong> 1260 pixels </strong> width</div>
+
+  <div class="box">This is a box of <strong> 417 pixels </strong> width </div>
+
+  <div class="box">This is a box of <strong> 417 pixels </strong> width </div>
+  <div class="box">This is a box of <strong> 417 pixels </strong> width </div>
+
+  <section>
+    <div class="container">
+      <div class="box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Inline Block
+        </strong> </div>
+
+      <div class="box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Inline Block
+        </strong> </div>
+      <div class="box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Inline Block
+        </strong> </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="float-box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Float</strong>
+      </div>
+
+      <div class="float-box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Float</strong>
+      </div>
+      <div class="float-box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Float</strong>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid-box-container">
+      <div class="box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Grid</strong>
+      </div>
+
+      <div class="box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Grid</strong>
+      </div>
+      <div class="box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Grid</strong>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="flex-box-container">
+      <div class="flex-box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Flex</strong>
+      </div>
+
+      <div class="flex-box">This is a box of <strong> 417 pixels </strong> Flex rendered using <strong> Grid</strong>
+      </div>
+      <div class="flex-box">This is a box of <strong> 417 pixels </strong> width rendered using <strong> Flex</strong>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
